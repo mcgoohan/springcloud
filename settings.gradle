@@ -1,0 +1,6 @@
+rootProject.name = 'springcloud'
+include 'configclient'
+include 'configserver'
+include 'task'
+include 'tasksink'
+include 'demo'

@@ -1,0 +1,31 @@
+---
+server:
+  port: 8888
+security:
+  basic:
+    enabled: true
+  user:
+    name: mcgoohan
+    password: mcgoohan
+spring:
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: false
+        git:
+          uri: https://github.com/mcgoohan/springcloud-demo
+          username: mcgoohan
+          password: yim3rt6
+          search-paths:
+            - 'station*'
+          repos:
+            perf:
+              pattern:
+                - '*perf'
+              uri: https://github.com/mcgoohan/springcloud-performance
+              username: mcgoohan
+              password: yim3rt6
+              search-paths:
+                - 'station*'
+        bootstrap: true
